@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~1.7.4",
     "@angular/animations": "^6.0.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
@@ -29,7 +30,7 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "~1.7.4",
+    
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
@@ -50,6 +51,9 @@
   },
   "scripts":{
   // ...
-  "deploy": "git push origin master && git push heroku master"
-  }
+  "postinstall": "ng build --aot -prod",
+  "start": "node server.js",
+  "deploy": "git push heroku master && git push heroku master"
+  },
+
 }
