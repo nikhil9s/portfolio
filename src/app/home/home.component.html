@@ -1,0 +1,16 @@
+<div class="content-container">
+
+  <h2>My Skills / Languages <span class="skill-counter">({{ skillCounts }})</span> </h2>
+
+  <div class="skill-content">
+    <p *ngFor="let lang of langs; let i = index">
+      <span> <i class="fa fa-ravelry" aria-hidden="true"></i> {{ lang }} </span> <input type="submit" class="remove-btn hide" value="Remove Skill" (click)="removeSkills(i)">
+    </p>
+  </div>
+
+  <div class="add-skill hide">
+      <input type="text" class="btn-inp" placeholder="Type your skill" [(ngModel)]="langText">
+      <input type="submit" class="add-btn" [value]="btnText" (click)="addSkill()">
+  </div>
+
+</div>

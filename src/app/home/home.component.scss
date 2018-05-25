@@ -1,0 +1,46 @@
+// skill content st
+
+
+
+.skill-counter {
+    font-size: 12px;
+}
+
+
+
+input.btn-inp {
+    border: 0;
+    height: 33px;
+    padding: 0px 10px;
+    background: #f8f8f8;
+}
+
+input.add-btn, input.remove-btn {
+    padding: 10px;
+    vertical-align: middle;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+input.add-btn {
+    background: #269900;
+}
+
+input.remove-btn {
+    background: #cc2900;
+}
+
+.skill-content {        
+
+    span {
+        min-width: 145px;
+        display: inline-block;
+    }
+
+    .fa-ravelry {
+        margin-right: 10px;
+    }
+}
+
+// skill content en

@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+
+body {
+
+    background: #222;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.main-container {
+    
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.img-circle {
+
+    height: 150px;
+    width: 150px;
+    border: 5px solid #e68a00;
+    border-radius: 100%;
+
+}
+
+a .fa {
+
+    color: #fff;
+    font-size: 26px;
+}
+
+.content-container {
+
+    max-width: 600px;
+    margin: 70px auto 0;
+
+}
+
+.nav-container {
+
+    position: relative;
+}
+
+
+ul.nav-links {
+    list-style: none;
+
+    li {
+
+        position: absolute;
+
+        &:nth-of-type(1){
+            left: 30%;
+            top: 10%;
+        }
+
+        &:nth-of-type(2){
+            left: 32%;
+            top: 50%;
+        }
+
+        &:nth-of-type(3){
+            left: 28%;
+            top: 90%;
+        }
+
+        &:nth-of-type(4){
+            left: 18%;
+            top: 115%;
+        }
+
+        &:nth-of-type(5){
+            left: 7%;
+            top: 118%;
+        }
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+
+.hide { display: none;}
