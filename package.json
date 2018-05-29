@@ -48,12 +48,6 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  },
-  "scripts":{
-  // ...
-  "postinstall": "ng build --aot -prod",
-  "start": "node server.js",
-  "deploy": "git push heroku master && git push heroku master"
-  },
+  }
 
 }
