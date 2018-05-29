@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+import { EducsService } from '../services/educs.service';
+
 
 @Component({
   selector: 'app-education',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
+  educs: Array<any>;
+
+  constructor(
+    private http: Http,
+    private educsServices: EducsService
+  ) { }
 
   ngOnInit() {
+
+    this.educsServices.getAllEducs()
+      .subscribe (
+        data => this.educs = data
+      )
   }
 
 }

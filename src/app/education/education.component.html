@@ -1,4 +1,9 @@
 <div class="content-container">
 
     <h2>My Education </h2>
+
+    <div *ngFor = "let educ of educs" class="u-list">
+        <h3>{{ educ.course }}</h3>
+        <h3>{{ educ.college }}</h3>
+    </div>
 </div>  

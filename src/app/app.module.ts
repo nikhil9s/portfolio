@@ -14,6 +14,7 @@ import { EducationComponent } from './education/education.component';
 import { UsersService } from './services/users.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { EducsService } from './services/educs.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFontAwesomeModule,
     HttpModule
   ],
-  providers: [UsersService],
+  providers: [UsersService,EducsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
